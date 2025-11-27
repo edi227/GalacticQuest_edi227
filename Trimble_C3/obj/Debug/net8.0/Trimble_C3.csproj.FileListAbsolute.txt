@@ -1,0 +1,29 @@
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\bin\Debug\net8.0\Trimble_C3.exe
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\bin\Debug\net8.0\Trimble_C3.deps.json
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\bin\Debug\net8.0\Trimble_C3.runtimeconfig.json
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\bin\Debug\net8.0\Trimble_C3.dll
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\bin\Debug\net8.0\Trimble_C3.pdb
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\Trimble_C3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\Trimble_C3.AssemblyInfoInputs.cache
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\Trimble_C3.AssemblyInfo.cs
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\Trimble_C3.csproj.CoreCompileInputs.cache
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\Trimble_C3.dll
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\refint\Trimble_C3.dll
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\Trimble_C3.pdb
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\Trimble_C3.genruntimeconfig.cache
+C:\Users\paise\source\repos\Trimble_C3\Trimble_C3\obj\Debug\net8.0\ref\Trimble_C3.dll
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\bin\Debug\net8.0\Trimble_C3.exe
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\bin\Debug\net8.0\Trimble_C3.deps.json
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\bin\Debug\net8.0\Trimble_C3.runtimeconfig.json
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\bin\Debug\net8.0\Trimble_C3.dll
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\bin\Debug\net8.0\Trimble_C3.pdb
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\Trimble_C3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\Trimble_C3.AssemblyInfoInputs.cache
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\Trimble_C3.AssemblyInfo.cs
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\Trimble_C3.csproj.CoreCompileInputs.cache
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\Trimble_C3.sourcelink.json
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\Trimble_C3.dll
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\refint\Trimble_C3.dll
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\Trimble_C3.pdb
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\Trimble_C3.genruntimeconfig.cache
+D:\Edi\Facultate\anul 3\Practica\Trimble\teme\GalacticQuest_edi227\Trimble_C3\obj\Debug\net8.0\ref\Trimble_C3.dll

@@ -1,1 +1,0 @@
-"# GalacticQuest-modificat"
