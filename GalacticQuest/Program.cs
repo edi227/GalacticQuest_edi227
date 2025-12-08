@@ -1,4 +1,6 @@
-﻿namespace GalacticQuest
+﻿using GalacticQuest.Monsters;
+
+namespace GalacticQuest
 {
     internal class Program
     {
@@ -6,9 +8,28 @@
         {
             Console.WriteLine("Hello, Galactic Quest!");
 
+            CreateAndDisplayMonsters();
+
             CreateAndDisplayPlayerStats();
 
             OpenMainMenu();
+        }
+
+        internal static void CreateAndDisplayMonsters()
+        {
+            Console.Write("\n");
+            Console.WriteLine("Displaying Created Monsters:");
+
+            List<Monster> monsters = new List<Monster>()
+            {
+                new Glorbazorg(),
+                new Xenotutzi()
+            };
+
+            for (int index = 0; index < monsters.Count; ++index)
+            {
+                monsters[index].OnDeath();
+            }
         }
 
         private static void CreateAndDisplayPlayerStats()
