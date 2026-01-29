@@ -5,6 +5,7 @@
         public string Name { get; set; }
         public int Hp { get; set; }
         public int Attack { get; set; }
+        public Action SpecialAction { get; set; } = () => { };
 
         public Monster(string name, int hp, int attack)
         {

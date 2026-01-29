@@ -11,6 +11,7 @@ namespace GalacticQuest
         {
             Console.WriteLine("Hello, Galactic Quest!");
             OpenMainMenu();
+
         }
 
         internal static void OpenMainMenu()
