@@ -50,49 +50,88 @@ namespace GalacticQuest.Planets
             }
 
             Console.Write("\n");
+            Console.WriteLine("FIGHT FOR YOUR LIFE");
+
             Console.WriteLine($"Player has {Program.currentPlayer.Hp} HP and {Program.currentPlayer.Attack} Attack points");
             Console.WriteLine($"You are facing off against {monster.Name} with {monster.Hp} HP and {monster.Attack} Attack points");
 
-            // select random number for player's attack value
-            int randomAttackPlayer = RandomNumberGenerator.Next(0, Program.currentPlayer.Attack);
+            Console.WriteLine("Select your option and press Enter: \n 1.Attack \n 2.Run \n");
+            int conditionToEscape = 7;
+            bool escaped = false;
+            bool playerTurn = true;
+            while (Program.currentPlayer.Hp > 0 && monster.Hp > 0 && !escaped)
+            {
+                if (playerTurn)
+                {
+                    Console.WriteLine("Player's turn");
 
-            // select random number for monster's attack value
-            int randomMonsterAttack = RandomNumberGenerator.Next(0, monster.Attack);
-            Console.Write("\n");
+                    int.TryParse(Console.ReadLine(), out int readOption);
+                    switch (readOption)
+                    {
+                        case 1:
+                            AttackMonster(monster);
+                            playerTurn = false;
+                            break;
 
-            if (randomAttackPlayer >= randomMonsterAttack)
+                        case 2:
+                            escaped = RunFromFight(conditionToEscape);
+                            playerTurn = false;
+                            break;
+
+                        default:
+                            Console.WriteLine("Try again");
+                            break;
+                    }
+                }
+                else if (!playerTurn && !escaped)
+                {
+                    Console.WriteLine("Monster's turn");
+
+                    MonsterAttack(monster);
+                    playerTurn = true;
+                }
+
+                Console.WriteLine($"Player's current HP : {Program.currentPlayer.Hp}");
+                Console.WriteLine($"Monster {monster.Name}'s current HP : {monster.Hp}");
+                Console.Write("\n");
+            }
+
+            if (escaped)
+            {
+                Console.WriteLine("Player has escaped successfully.");
+            }
+            else if (monster.Hp <= 0)
             {
                 Console.WriteLine($"Player WON the battle against {monster.Name} !!!!");
-
+                monster.OnDeath();
             }
             else
             {
                 Console.WriteLine($"Nooo you lost against {monster.Name}.");
-
             }
+        }
 
-            Console.Write("\n");
-            Console.WriteLine($"Player dealt {randomAttackPlayer} Damage");
-            Console.WriteLine($"Monster {monster.Name} dealt {randomMonsterAttack} Damage");
-            Console.Write("\n");
+        internal static void AttackMonster(Monster monster)
+        {
+            monster.Hp -= Program.currentPlayer.Attack;
+        }
 
-            Program.currentPlayer.UpdateHp(-randomMonsterAttack);
-
-            monster.Hp -= randomAttackPlayer;
-            if (monster.Hp <= 0)
+        internal static bool RunFromFight(int conditionToRun)
+        {
+            int escapeTry = RandomNumberGenerator.Next(1, 10);
+            if (escapeTry < conditionToRun)
             {
-                monster.OnDeath();
+                Console.WriteLine($"Escape failed. ({escapeTry} < {conditionToRun})");
+                return false;
             }
 
-            if (Program.currentPlayer.Hp > 0)
-            {
-                Console.WriteLine($"Player's current HP : {Program.currentPlayer.Hp}");
-            }
+            Console.WriteLine($"Escape successfully. ({escapeTry} < {conditionToRun})");
+            return true;
+        }
 
-            if (monster.Hp > 0)
-            {
-                Console.WriteLine($"Monster {monster.Name}'s current HP : {monster.Hp}");
-            }
+        internal static void MonsterAttack(Monster monster)
+        {
+            Program.currentPlayer.UpdateHp(-monster.Attack);
         }
 
         /// <summary>

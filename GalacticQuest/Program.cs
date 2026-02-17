@@ -1,4 +1,5 @@
-﻿using GalacticQuest.Items;
+﻿using GalacticQuest.Files;
+using GalacticQuest.Items;
 using GalacticQuest.Monsters;
 using GalacticQuest.Planets;
 
@@ -9,16 +10,13 @@ namespace GalacticQuest
         internal static Player currentPlayer = new Player(100, 10, 250);
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello, Galactic Quest!");
-
-            IList<Monster> monsters = new List<Monster>() { new Xenotutzi("monstrulet", 100, 20), new Ignifax("MONSTRU", 30, 30) };
-            foreach (var monster in monsters)
-            {
-                monster.SpecialAttack();
-                Console.WriteLine($"Hp: {monster.Hp} | Attack: {monster.Attack}");
-            }
+            Console.WriteLine("Hello, Galactic Quest!");
 
             //OpenMainMenu();
+
+            // Constructor called only once, even if we create 2 instances of FileManager
+            FileManager fm1 = FileManager.Instance;
+            FileManager fm2 = FileManager.Instance;
         }
 
         internal static void OpenMainMenu()
